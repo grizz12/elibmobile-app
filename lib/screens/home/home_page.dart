@@ -1,7 +1,7 @@
-import 'package:e_book_app/models/book.dart';
-import 'package:e_book_app/screens/home/components/recent_book.dart';
-import 'package:e_book_app/screens/home/components/trending_book.dart';
-import 'package:e_book_app/themes.dart';
+import 'package:elibmobile/models/book.dart';
+import 'package:elibmobile/screens/home/components/recent_book.dart';
+import 'package:elibmobile/screens/home/components/trending_book.dart';
+import 'package:elibmobile/themes.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -32,23 +32,18 @@ class _HomePageState extends State<HomePage> {
             Container(
               width: 50,
               height: 50,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  image: AssetImage('assets/images/profile-pic.png'),
-                ),
-              ),
+              
             ),
             SizedBox(width: 8),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Hello Sarah,',
+                  'ElibMobile App',
                   style: semiBoldText16,
                 ),
                 Text(
-                  'Good Morning',
+                  'Elibrary',
                   style: regularText14.copyWith(color: greyColor),
                 ),
               ],
@@ -68,7 +63,7 @@ class _HomePageState extends State<HomePage> {
         margin: EdgeInsets.symmetric(horizontal: 30),
         child: TextField(
           decoration: InputDecoration(
-            hintText: 'Find Your Favorite Book',
+            hintText: 'Cari Buku Favorite Kamu',
             hintStyle: mediumText12.copyWith(color: greyColor),
             fillColor: greyColorSearchField,
             filled: true,

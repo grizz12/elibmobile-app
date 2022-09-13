@@ -1,4 +1,4 @@
-import 'package:e_book_app/themes.dart';
+import 'package:elibmobile/themes.dart';
 import 'package:flutter/material.dart';
 
 class BookDetail extends StatelessWidget {
@@ -21,7 +21,7 @@ class BookDetail extends StatelessWidget {
                 },
                 child: Icon(Icons.chevron_left_rounded, size: 30)),
             Text(
-              'Book Details',
+              'Detail Buku',
               style: semiBoldText14.copyWith(
                 color: blackColor,
               ),
@@ -78,7 +78,7 @@ class BookDetail extends StatelessWidget {
             Column(
               children: [
                 Text(
-                  'Number of pages',
+                  'Jumlah halaman buku',
                   style: mediumText10.copyWith(color: dividerColor),
                 ),
                 SizedBox(height: 2),
@@ -92,7 +92,7 @@ class BookDetail extends StatelessWidget {
             Column(
               children: [
                 Text(
-                  'Language',
+                  'Bahasa',
                   style: mediumText10.copyWith(color: dividerColor),
                 ),
                 SizedBox(height: 2),
@@ -183,7 +183,7 @@ class BookDetail extends StatelessWidget {
             ),
             SizedBox(height: 30),
             Text(
-              'Description',
+              'Deskripsi',
               style: semiBoldText14.copyWith(color: blackColor2),
             ),
             SizedBox(height: 6),

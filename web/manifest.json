@@ -1,6 +1,6 @@
 {
-    "name": "e_book_app",
-    "short_name": "e_book_app",
+    "name": "elibmobile",
+    "short_name": "elibmobile",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

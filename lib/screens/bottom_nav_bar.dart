@@ -1,8 +1,7 @@
-import 'package:e_book_app/screens/cart/cart_page.dart';
-import 'package:e_book_app/screens/home/home_page.dart';
-import 'package:e_book_app/screens/save/save_page.dart';
-import 'package:e_book_app/screens/user/user_page.dart';
-import 'package:e_book_app/themes.dart';
+import 'package:elibmobile/screens/home/home_page.dart';
+import 'package:elibmobile/screens/save/save_page.dart';
+import 'package:elibmobile/screens/user/user_page.dart';
+import 'package:elibmobile/themes.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -19,7 +18,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
   final _screens = [
     HomePage(),
     SavePage(),
-    CartPage(),
     UserPage(),
   ];
   @override
@@ -60,20 +58,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
             icon: Container(
               margin: EdgeInsets.only(top: 15),
               child: Image.asset(
-                'assets/icons/icon-cart.png',
-                width: 20,
-                color: _selectedIndex == 2 ? greenColor : greyColor,
-              ),
-            ),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Container(
-              margin: EdgeInsets.only(top: 15),
-              child: Image.asset(
                 'assets/icons/icon-user.png',
                 width: 18,
-                color: _selectedIndex == 3 ? greenColor : greyColor,
+                color: _selectedIndex == 2 ? greenColor : greyColor,
               ),
             ),
             label: '',
